@@ -1,7 +1,6 @@
 class Solution:
     def backspaceCompare(self, S: str, T: str) -> bool:
-        s, t = compress(S), compress(T)
-        return s == t
+        return self.compress(S) == self.compress(T)
     def compress(self, S: str) -> str:
         s = []
         for x in S:
@@ -13,5 +12,6 @@ class Solution:
         return ''.join(s)
 
 if __name__ == '__main__':
-    sol = Solution()
-    print(sol.compress("#6"))
+    s = "abb#c"
+    t = "ac#b#bc"
+    print(Solution().backspaceCompare(s, t))
