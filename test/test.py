@@ -1,5 +1,7 @@
-import math
-
-a = [1,43,53,65,131,42,42]
-a.sort()
-print(a)
+a = 1
+A = [1,2]
+def f(x, X):
+    x = 34
+    X = [3,4]
+f(a, A)
+print(a,A)
